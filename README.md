@@ -1,7 +1,7 @@
-# Fitness-Tracker
+<h1>Fitness Tracker</h1>
 
-# Description:
-## The fitness tracker app is an innovative web-based application that is designed with the aim of assisting users in achieving their fitness goals. The application has a user-friendly interface that makes it easy to use and navigate. The app's primary features include tracking daily exercises, recording daily meals, monitoring the user's weight, and keeping track of the user's progress over time. The app utilizes the latest technologies and programming languages such as React, Bootstrap, JavaScript, and authentication to ensure it is efficient and secure.
+<h2>Description:</h2>
+<p>The fitness tracker app is an innovative web-based application that is designed with the aim of assisting users in achieving their fitness goals. The application has a user-friendly interface that makes it easy to use and navigate. The app's primary features include tracking daily exercises, recording daily meals, monitoring the user's weight, and keeping track of the user's progress over time. The app utilizes the latest technologies and programming languages such as React, Bootstrap, JavaScript, and authentication to ensure it is efficient and secure.</p>
 
 <ul>This was a group project completed during a 1-week sprint.
 My teammates were:
@@ -10,44 +10,39 @@ My teammates were:
 <li>Ana Solcan (https://github.com/solcana)</li>
 </ul>
 
-### Technologies: React, Bootstrap, JavaScript, OAuth, Trello, Figma
+<ul>Technologies: 
+<li>React</li>
+<li>Bootstrap</li>
+<li>JavaScript</li>
+<li>OAuth</li>
+<li>Trello</li>
+<li>Figma</li>
 
-# Brief
+<h2>Brief</h2>
 
-### Your team will be creating a full stack application using Express and MongoDB along with ReactJS a.k.a the MERN stack.
+<p>Your team will be creating a full stack application using Express and MongoDB along with ReactJS a.k.a the MERN stack.</p>
 
-Use your imagination! You get to create whatever you want for this app. Though, you'll need to run your user stories, and wireframes, by your instructors to get their feedback and approval before you begin coding! Remember to keep things small and focus on mastering the fundamentals as scope creep/feature creep is the biggest pitfall for any project!
+<p>Use your imagination! You get to create whatever you want for this app. Though, you'll need to run your user stories, and wireframes, by your instructors to get their feedback and approval before you begin coding! Remember to keep things small and focus on mastering the fundamentals as scope creep/feature creep is the biggest pitfall for any project!</p>
 
-Identify what you need to build and accomplish to meet project expectations and identify everything else as stretch goals. If you meet your MVP (Minimum Viable Product) ahead of schedule, you can decide which remaining goals to focus on for the remainder of your time.
+<p>Identify what you need to build and accomplish to meet project expectations and identify everything else as stretch goals. If you meet your MVP (Minimum Viable Product) ahead of schedule, you can decide which remaining goals to focus on for the remainder of your time.</p>
 
-You will be working as a team for this project, everyone must contribute on a team. If 1 person does not contribute or 1 person does all the work then the entire team will fail the project requirements. If you pair program then please include the other persons GitHub name in the commit.
-
-
+<p>You will be working as a team for this project, everyone must contribute on a team. If 1 person does not contribute or 1 person does all the work then the entire team will fail the project requirements. If you pair program then please include the other persons GitHub name in the commit.</p>
 
 
 
+<h2>Planning</h2>
 
-## Project Requirements
+<p>To plan this project, we started by doing some initial research on fitness tracker apps and the features they typically include. Based on this research, we created a list of requirements and began sketching out the basic layout and functionality of the app.</p>
 
-### Project requirements for Wednesday 8th Lunchtime
+<p>Once we had a basic idea of the app's functionality, we began creating an ERD and wireframes of the front end and UI using Figma. These wireframes helped us to solidify the layout and design of the app before moving on to the development stage</p>
 
-- [x] Wireframes
-- [x] User Stories
-- [x] Entity Relationship Diagram (ERD)
+<p>Finally, we used Trello to plan the sprint and track our progress throughout the development process. We assigned tasks to each day of the sprint, and used Trello to keep track of my progress and adjust my timeline as needed.</p>
 
-# Wireframing Brainstorming
-
-## To plan this project, we started by doing some initial research on fitness tracker apps and the features they typically include. Based on this research, we created a list of requirements and began sketching out the basic layout and functionality of the app.
-
-## Once we had a basic idea of the app's functionality, we began creating an ERD and wireframes of the front end and UI using Figma. These wireframes helped us to solidify the layout and design of the app before moving on to the development stage.
-
-## Finally, we used Trello to plan the sprint and track our progress throughout the development process. We assigned tasks to each day of the sprint, and used Trello to keep track of my progress and adjust my timeline as needed.
-
-1. Login page (authentication happens)
-2. Profile Page / Dashboard (once logged in)
-3. Workout Page (MODEL e.g. type of exercise: string, reps: number, weight: number .....)
-4. General Blog/Article Page (e.g. food, workout tips etc.)
-   - Weight, water, calories intake, body measurements (MODEL e.g. weight: number, calories: number .....)
+<ol>
+<li>Login page (authentication happens)</li>
+<li>Profile Page / Dashboard (once logged in)</li>
+<li>Workout Page (MODEL e.g. type of exercise: string, reps: number, weight: number .....)</li>
+<li>General Blog/Article Page (e.g. food, workout tips etc.)</li>
 
 #### Wireframes
 
@@ -72,6 +67,8 @@ You will be working as a team for this project, everyone must contribute on a te
 </p>
 
 <p>The Graph function is defined using the useState and useEffect hooks provided by React. useState is used to create a state variable called data that is initialized as an empty array. The state variable is updated using the setData function.</p>
+
+
 <pre><code>function Graph() {
   const [data, setData] = useState([]);
 
@@ -83,14 +80,15 @@ You will be working as a team for this project, everyone must contribute on a te
       setData([]);
     }
   }, []);
-</code>
+
+</pre></code>
 
 <p>The first useEffect hook is used to retrieve data from localStorage and set the initial state of the data variable. It runs only once on component mount, as it has an empty array as the second argument.</p>
 
 <pre><code>useEffect(() => {
     localStorage.setItem('workoutData', JSON.stringify(data));
   }, [data]);
-</code>
+</pre></code>
 
 <p>The second useEffect hook is used to save the workout data to localStorage every time the data state variable changes.</p>
 
@@ -103,64 +101,23 @@ You will be working as a team for this project, everyone must contribute on a te
     const newBenchPress = parseInt(e.target.benchPress.value);
     const newSquats = parseInt(e.target.squats.value);
     setData([...data, { date: newDate, pushUps: newPushUps, pullUps: newPullUps, sitUps: newSitUps, benchPress: newBenchPress, squats: newSquats }]);
-</code>
+</pre></code>
+
+
+<h2>Code Explanation</h2>
 
 <p>A handleAddData function is defined to handle the submission of the workout data form. This function receives an event object as an argument, which is used to extract the values of the form fields. The function then updates the data state variable by adding a new object with the extracted data to the existing array of data. Finally, the function resets the form fields.</p>
 
-<pre><code>  return (
-    <Container>
-      <h1>Usman's Workout Intensity History</h1>
-      <Form onSubmit={handleAddData}>
-        <Form.Group>
-          <Form.Label>Date</Form.Label>
-          <Form.Control type="date" name="date" required />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Push-ups</Form.Label>
-          <Form.Control type="number" name="pushUps" required />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Pull-ups</Form.Label>
-          <Form.Control type="number" name="pullUps" required />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Sit-ups</Form.Label>
-          <Form.Control type="number" name="sitUps" required />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Bench Press</Form.Label>
-          <Form.Control type="number" name="benchPress" required />
-        </Form.Group>
-        <Form.Group>
-          <Form.Label>Squats</Form.Label>
-          <Form.Control type="number" name="squats" required />
-        </Form.Group>
-        <Button type="submit">Add Data</Button>
-      </Form>
-      <br />
-      <ResponsiveContainer width="100%" height={400}>
-        <LineChart data={data}>
-          <XAxis dataKey="date" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="pushUps" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="pullUps" stroke="#82ca9d" activeDot={{ r: 8 }} />
-          <Line
-type="monotone" dataKey="sitUps" stroke="#ffc658" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="benchPress" stroke="#ff7300" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="squats" stroke="#00bcd4" activeDot={{ r: 8 }} />
-        </LineChart>
-      </ResponsiveContainer>
-    </Container>
-  );
-</code>
 
 <p>The Graph function returns a Container element from Bootstrap, which contains the header, form, and line chart. The header contains the title of the application, which is "Usman's Workout Intensity History". The Form element is used to collect the workout data from the user. It has six Form.Group elements for each of the workout exercises, and a Button element to submit the form.</p>
 
 <p>The LineChart component from the Recharts library is used to render the line chart. It receives the workout data as the data prop and maps it to the x and y axis of the chart using the XAxis and YAxis components. The CartesianGrid component is used to draw the grid lines, and the Tooltip and Legend components are used to display additional information about the data points. The Line components are used to draw lines for each of the workout exercises, with a different color and shape for each exercise. The activeDot prop is used to highlight the data point on hover. Finally, the ResponsiveContainer component is used to ensure that the chart is responsive and adapts to different screen sizes.
 </p>
+
+
+
+<h2>Challenges</h2>
+
 <p>
 The project presented a major challenge for our team when it came to implementing user authentication. We had to navigate the complexity of integrating both JSON Web Tokens (JWT) and bcrypt into the app's architecture. As these technologies were unfamiliar to us, we had to conduct extensive research and experimentation to gain a better understanding of how they worked and how we could correctly implement them.</p>
 
@@ -170,7 +127,7 @@ In addition to the authentication challenges, we also encountered difficulties i
 <p>
 To overcome these challenges, we had to work collaboratively and communicate effectively as a team. We shared knowledge and expertise, conducted extensive research, and experimented with different solutions until we found the optimal approach. We also had to remain flexible and adaptable, constantly tweaking our designs and code to ensure that the app was secure, functional, and user-friendly. </p>
 
-
+<h2>Wins and Takeaways<h2>
 <p>One of the most significant victories was successfully implementing user authentication. This was a complex task that required a lot of research and experimentation with new technologies like JWT and bcrypt. It was satisfying to see the user authentication system work seamlessly and provide a secure environment for users to interact with the application. This victory not only allowed us to strengthen our coding skills but also gave us a sense of pride in creating a secure and functional application. </p>
 
 <p>Another personal win for me during this project was learning how to use Recharts and chart.js. These two charting libraries helped me create some visually appealing and informative charts and graphs that made the application more user-friendly and engaging. Working with these libraries taught me valuable skills in data visualization, which will be useful in future projects. Overall, this project was a great opportunity for me to learn new skills and overcome challenges, and I am proud of the work I accomplished.
@@ -185,6 +142,7 @@ To overcome these challenges, we had to work collaboratively and communicate eff
 
 
 <h2>Potential Improvements</h2>
+
 <p>Better styling:
 This can greatly enhance the user experience in a fitness tracking app. A clean and visually appealing design can make the app more engaging and encourage users to spend more time interacting with it. A well-designed interface can also help users to quickly and easily find the information they need, and provide a sense of organization and structure to the app's data. Additionally, thoughtful use of color, typography, and layout can help to convey important information and make the app feel more intuitive and user-friendly.
 </p>
