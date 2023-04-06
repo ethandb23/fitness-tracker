@@ -53,11 +53,11 @@ My teammates were:
 ![Wireframe for Exercise Page](/assets/Images/Workout%20Page.png)
 
 
-#### ERD
+<h2> ERD,/h2>
 
 ![Entity Relationship Diagram](/assets/Images/ERD.png)
 
-#### Trello - Project Management
+<h2> Trello - Project Management </h2>
 
 <img width="1399" alt="Screenshot 2023-02-17 at 09 20 43" src="https://user-images.githubusercontent.com/114579141/219604711-a7f46696-10e2-485e-93d4-acba3c634a4c.png">
 
@@ -127,7 +127,16 @@ In addition to the authentication challenges, we also encountered difficulties i
 <p>
 To overcome these challenges, we had to work collaboratively and communicate effectively as a team. We shared knowledge and expertise, conducted extensive research, and experimented with different solutions until we found the optimal approach. We also had to remain flexible and adaptable, constantly tweaking our designs and code to ensure that the app was secure, functional, and user-friendly. </p>
 
-<h2>Wins and Takeaways<h2>
+
+<h2>Potential Improvements</h2>
+
+<p>Better styling:
+This can greatly enhance the user experience in a fitness tracking app. A clean and visually appealing design can make the app more engaging and encourage users to spend more time interacting with it. A well-designed interface can also help users to quickly and easily find the information they need, and provide a sense of organization and structure to the app's data. Additionally, thoughtful use of color, typography, and layout can help to convey important information and make the app feel more intuitive and user-friendly.
+</p>
+
+<h2>Wins and Takeaways</h2>
+
+
 <p>One of the most significant victories was successfully implementing user authentication. This was a complex task that required a lot of research and experimentation with new technologies like JWT and bcrypt. It was satisfying to see the user authentication system work seamlessly and provide a secure environment for users to interact with the application. This victory not only allowed us to strengthen our coding skills but also gave us a sense of pride in creating a secure and functional application. </p>
 
 <p>Another personal win for me during this project was learning how to use Recharts and chart.js. These two charting libraries helped me create some visually appealing and informative charts and graphs that made the application more user-friendly and engaging. Working with these libraries taught me valuable skills in data visualization, which will be useful in future projects. Overall, this project was a great opportunity for me to learn new skills and overcome challenges, and I am proud of the work I accomplished.
@@ -140,9 +149,3 @@ To overcome these challenges, we had to work collaboratively and communicate eff
 <p>Overall, this project taught us the value of perseverance, planning, and continuous learning. We are proud of the work we accomplished and feel better equipped to tackle even more complex projects in the future.
 </p>
 
-
-<h2>Potential Improvements</h2>
-
-<p>Better styling:
-This can greatly enhance the user experience in a fitness tracking app. A clean and visually appealing design can make the app more engaging and encourage users to spend more time interacting with it. A well-designed interface can also help users to quickly and easily find the information they need, and provide a sense of organization and structure to the app's data. Additionally, thoughtful use of color, typography, and layout can help to convey important information and make the app feel more intuitive and user-friendly.
-</p>
